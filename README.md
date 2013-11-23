@@ -5,6 +5,7 @@ A lean JS library that makes waiting on a collection of async calls less painful
 
 Example:
 
+```javascript
 var bootup = new Waitress();
 
 $.ajax({
@@ -24,3 +25,4 @@ $.ajax({
 bootup.when(['notifications', 'stats'], function(){
   console.log('All async calls are done');
 });
+```
