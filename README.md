@@ -22,7 +22,7 @@ $.ajax({
    bootup.add('messages');
 });
 
-bootup.when(['notifications', 'stats'], function(){
+bootup.when(['notifications', 'messages'], function(){
   console.log('All async calls are done');
 });
 ```
