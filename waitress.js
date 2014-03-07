@@ -1,4 +1,4 @@
-//  Waitress.js 0.0.1
+//  Waitress.js 0.0.2
 
 //  (c) 2013 Bjoern Zinssmeister
 //  Waitress may be freely distributed under the MIT license.
@@ -28,5 +28,8 @@
       clearInterval(this.i);
       this.callback();
     };
+    this.clear = function(){
+      clearInterval(this.i);
+    }
   };
 }).call(this);
